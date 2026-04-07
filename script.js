@@ -14,14 +14,6 @@ class Person {
   }
 }
 class Student extends Person{
- getName(){
-  return this.name;
- }
-
-  setAge(age) {
-    this.age = age;
-  }
-
 	study(){
 		console.log(this.name + " is studying")
 	}	
@@ -29,19 +21,13 @@ class Student extends Person{
 }
 
 class Teacher extends Person{
-  getName(){
-   return this.name;
-  }
  
-   setAge(age) {
-     this.age = age;
-   }
 	teach(){
 		console.log(this.name + " is teaching")
 	}	
  
  }
-
+const person = new Person("John", 25);
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
